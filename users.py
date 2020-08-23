@@ -35,7 +35,7 @@ def create_user():
     #host = "db";
     port = "53306",
     user="vpUser",
-    password="vpPassword!",
+    password="*************",
     database="vpdb"
     )
 
@@ -79,7 +79,7 @@ def get_user(id):
     #host = "db";
     port = "53306",
     user="vpUser",
-    password="vpPassword!",
+    password="*************",
     database="vpdb"
     )
 
@@ -122,7 +122,7 @@ def update_user():
     #host = "db";
     port = "53306",
     user="vpUser",
-    password="vpPassword!",
+    password="*************",
     database="vpdb"
     )
 
@@ -173,7 +173,7 @@ def get_all_users():
     #host = "db";
     port = "53306",
     user="vpUser",
-    password="vpPassword!",
+    password="*************",
     database="vpdb"
     )
 
@@ -212,7 +212,7 @@ def delete_user(id):
     #host = "db";
     port = "53306",
     user="vpUser",
-    password="vpPassword!",
+    password="*************",
     database="vpdb"
     )
 
