@@ -1,0 +1,49 @@
+Commands
+
+# Create virtual environment
+python3 -m venv venv
+
+# Activate Linux
+source venv/bin/activate
+
+# Activate Windows 
+venv\Scripts\activate
+
+# Upgrade pip installer
+pip install --upgrade pip
+
+# install Flask command
+pip install flask
+
+# install mySQL connector
+pip install mysql-connector-python
+
+There are .env or .flaskenv files present. Do "pip install python-dotenv" to use them.
+
+# launches the docker shell
+docker exec -it <container id> /bin/bash
+
+# deactivate the virtual environment
+deactivate
+
+# Flask and Flask-SQLAlchemy can be installed using PIP
+pip install flask flask-sqlalchemy
+-create and object and it will store to database without you having to write the sql commands
+Object relational mapping
+
+# install PyMySQL to enable MySQL connection with FlaskSQLAlchemy
+pip install pymysql
+-allows python to connect to mysql
+
+# In order to serve JSON response from our API using the data returned by SQLAlchemy, we need another library called marshmallow which is an addon to SQLAlchemy to serialize SQLAlchemy-returned data objects to JSON.
+pip install flask-marshmallow
+
+# Install requirements.txt
+pip install -r requirements.txt
+
+# Freeze requirements
+pip freeze > requirements.txt
+
+# Install passlib
+pip install passlib
+
