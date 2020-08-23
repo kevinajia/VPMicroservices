@@ -16,7 +16,10 @@ def index():
 
 @app.route('/users', methods=['POST'])
 def create_user():
+    """
+    Create an user from a json doc
 
+    """
     posted_data = request.get_json()
 
     print (posted_data)
@@ -64,6 +67,10 @@ def create_user():
 
 @app.route("/users/<id>", methods=['GET'])
 def get_user(id):
+    """
+    Get a user by ID
+
+    """
 
     print (id) 
 
@@ -95,6 +102,10 @@ def get_user(id):
 
 @app.route("/users", methods=['PUT'])
 def update_user():
+    """
+    Update a user from a json doc
+
+    """
 
     posted_data = request.get_json()
 
@@ -152,6 +163,11 @@ def update_user():
 
 @app.route("/users", methods=['GET'])
 def get_all_users():
+    """
+    Get all users
+
+    """
+
     mydb = mysql.connector.connect(
     host="127.0.0.1",
     #host = "db";
@@ -182,6 +198,10 @@ def get_all_users():
 
 @app.route('/users/<id>', methods=['DELETE'])
 def delete_user(id):
+    """
+    Delete an existing user
+
+    """
 
     print (id)
 
